@@ -23,7 +23,7 @@ body {
 .container {
     background-color: var(--White);
     width: 25%;
-    height: 100vh;
+    height: 100%;
     border-radius: 20px;
     margin: 6% auto;
     padding: 17px;
@@ -145,5 +145,13 @@ p {
     .name {
         font-size: 14px;
         font-weight: 900;
+    }
+}
+@media (min-width: 376px) and (max-width: 600px) {
+    .container {
+        width: 60%;
+        margin: 10% auto;
+        padding: 10px;
+        box-shadow: 4px 4px black;
     }
 }
