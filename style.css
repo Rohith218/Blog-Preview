@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Yellow);
+}
+
+.container {
+    background-color: var(--White);
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 6% auto;
+    padding: 17px;
+    box-shadow: 8px 8px black;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* .design img{
+    border-radius: 15px;
+} */
+.design {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.learn {
+    padding: 5px 12px;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    margin: 15px 0;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.title {
+    font-size: x-large;
+    margin: 20px 0;
+}
+
+.desc {
+    margin-bottom: 20px;
+    color: var(--Grey);
+    /* letter-spacing: 1px; */
+    line-height: 23px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile .pic {
+    width: 10%;
+    margin-right: 12px;
+}
+
+.name {
+    font-weight: 900;
+}
+
+.attribution a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.attribution a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: auto;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+        margin: 10% auto;
+        padding: 10px;
+        box-shadow: 4px 4px black;
+    }
+
+    .profile .pic {
+        width: 10%;
+        margin-right: 8px;
+    }
+
+    .title {
+        font-size: large;
+        margin: 15px 0;
+    }
+
+    .desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .learn {
+        /* width: 100%; */
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 14px;
+        font-weight: 900;
+    }
+}
