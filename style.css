@@ -23,7 +23,7 @@ body {
 .container {
     background-color: var(--White);
     width: 25%;
-    height: 50vh;
+    height: 100vh;
     border-radius: 20px;
     margin: 6% auto;
     padding: 17px;
